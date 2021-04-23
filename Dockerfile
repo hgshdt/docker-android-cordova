@@ -8,7 +8,6 @@ RUN apk add --no-cache nodejs npm wget
 
 # Install npm packages
 RUN npm install -g cordova@${CORDOVA_CLI} && \
-    npm install -g commander && \
     cordova telemetry off
 ENV NODE_PATH "/usr/lib/node_modules"
 
